@@ -47,6 +47,7 @@ body, html {
 
 .text {
     color: #a0a1a5;
+    line-height: 1.6rem;
 }
 
 
@@ -104,12 +105,12 @@ body, html {
     padding-top: 20px;
 }
 
-.button-google {
+.button-blue {
     background-color: #5065DA;
     border: 2px solid #5065DA;
 }
 
-.button-google:hover {
+.button-blue:hover {
     color: #5065DA;
 }
 
@@ -134,7 +135,7 @@ body, html {
     left: 81px;
 }
 
-.countainer {
+.back-shape, .back-shape-inverted {
     position: relative;
     top: -325px;
     left: 210px;
@@ -145,4 +146,75 @@ body, html {
     margin: auto;
     border-radius: 0 0 0 140px;
   }
+
+.features-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.features {
+    margin: auto;
+    text-align: center;
+}
+
+.title-feature {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.feature-text {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    width: 470px;
+}
+
+.button-features-container {
+    width: 632px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #c9cacc;
+}
+
+.button-style-feature {
+    padding: 30px 40px;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+    color: #a0a1a5;
+}
+
+.button-style-feature:hover {
+    color: #FB5859;
+}
+
+.button-style-feature-active {
+    border-bottom: 3px solid #FB5859;
+    padding-bottom: 27px;
+    color: #212142;
+}
+
+.feature-tab-1, .feature-tab-2, .feature-tab-3 {
+    display: flex;
+    gap: 120px;
+}
+
+.inactive {
+    display: none;
+}
+
+.text-container-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text-feature {
+    width: 390px;
+}
+
+.button-features {
+    width: 134px;
+}
 
