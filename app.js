@@ -1,3 +1,5 @@
+// FEATURES
+
 // Buttons
 const buttonsFeature = document.querySelectorAll('.button-style-feature')
 
@@ -13,8 +15,6 @@ buttonsFeature.forEach( button => {
         })
         button.classList.add('button-style-feature-active')
 
-        console.log(button.textContent)
-
         if(button.innerText === "Simple Bookmarking" ) {
             featureTab1.classList.remove('inactive')
             featureTab2.classList.add('inactive')
@@ -28,5 +28,19 @@ buttonsFeature.forEach( button => {
             featureTab2.classList.add('inactive')
             featureTab3.classList.remove('inactive')
         }
+    })
+})
+
+// QUESTIONS
+
+const arrowsButton = document.querySelectorAll('.questions-arrow')
+
+arrowsButton.forEach((arrow) => {
+    arrow.addEventListener('click', event => {
+        const questionParagraph = event.target.parentElement.nextElementSibling
+
+        questionParagraph.classList.toggle('question-text-active')
+
+        event.target.classList.toggle('arrow-active')
     })
 })
