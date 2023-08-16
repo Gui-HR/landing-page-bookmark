@@ -309,8 +309,11 @@ body, html {
     cursor: pointer;
 }
 
+.question-text-container:hover {
+    color: #FB5859;
+}
+
 .question-title {
-    color: #212142;
     font-weight: normal;
 }
 

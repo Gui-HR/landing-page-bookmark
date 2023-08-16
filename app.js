@@ -33,14 +33,37 @@ buttonsFeature.forEach( button => {
 
 // QUESTIONS
 
-const arrowsButton = document.querySelectorAll('.questions-arrow')
+// const arrowsButton = document.querySelectorAll('.questions-arrow')
 
-arrowsButton.forEach((arrow) => {
-    arrow.addEventListener('click', event => {
-        const questionParagraph = event.target.parentElement.nextElementSibling
+// arrowsButton.forEach((arrow) => {
+//     arrow.addEventListener('click', event => {
+//         const questionParagraph = event.target.parentElement.nextElementSibling
+
+//         questionParagraph.classList.toggle('question-text-active')
+
+//         event.target.classList.toggle('arrow-active')
+//     })
+// })
+
+const questions = document.querySelectorAll('.question-text-container')
+
+questions.forEach(question => {
+    question.addEventListener('click', event => {
+        const elementClicked = event.target
+        let arrow
+
+        if(elementClicked.nodeName === 'DIV') {
+             arrow = elementClicked.children[1]
+        } else if(elementClicked.nodeName === 'H3') {
+            arrow = elementClicked.nextElementSibling
+        } else {
+            arrow = elementClicked
+        }
+
+        arrow.classList.toggle('arrow-active')
+
+        const questionParagraph = arrow.parentElement.nextElementSibling
 
         questionParagraph.classList.toggle('question-text-active')
-
-        event.target.classList.toggle('arrow-active')
     })
 })
