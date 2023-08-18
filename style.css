@@ -12,21 +12,19 @@
 #5065DA
 #FB5859
 #212142
+#242946
 #AEAFB4
 #5C5C63
 */
-
-body, html {
-    width: 1100px;
-    margin: auto;
-}
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     padding-right: 50px;
-    margin-top: 40px;
     align-items: center;
+    width: 1100px;
+    margin: auto;
+    margin-top: 40px;
 }
 
 .logo-bookmark {
@@ -73,13 +71,18 @@ body, html {
     background-color: white;
 }
 
-.button-login {
+.red-button {
     background-color: #FB5859;
     border: solid 2px #FB5859;
 }
 
-.button-login:hover {
+.red-button:hover {
     color: #FB5859;
+}
+
+main {
+    width: 1100px;
+    margin: auto;
 }
 
 .main-section {
@@ -194,7 +197,7 @@ body, html {
     color: #212142;
 }
 
-.feature-tab-1, .feature-tab-2, .feature-tab-3 {
+.feature-tab {
     display: flex;
     gap: 120px;
 }
@@ -258,7 +261,6 @@ body, html {
     height: 278px;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(124, 150, 221, 0.158);
-    
 }
 
 .extensions-img-logo {
@@ -342,4 +344,70 @@ body, html {
     display: block;
     margin: 50px auto;
 
+}
+
+.contact-container {
+    background-color: #5065DA;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.contact-text {
+    color: #F7F7F7;
+    letter-spacing: 5px;
+    font-size: .7em;
+}
+
+.contact-title {
+    width: 370px;
+    margin: 25px auto;
+    color: #F7F7F7;
+}
+
+.contact-input {
+    font-size: .9em;
+    padding: 10px 20px 10px 10px;
+    margin-right: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-button {
+    font-size: .9em;
+}
+
+footer {
+    display: flex;
+    background-color: #242946;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+
+.footer-logo-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-logo {
+    height: 25px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    font-size: 0.9em;
+}
+
+.footer-links > li {
+    list-style-type: none;
+}
+
+.footer-logos:hover {
+    filter: invert(43%) sepia(39%) saturate(2315%) hue-rotate(327deg) brightness(103%) contrast(97%);
+}
+
+.footer-facebook {
+    margin-right: 35px;
 }

@@ -4,9 +4,7 @@
 const buttonsFeature = document.querySelectorAll('.button-style-feature')
 
 // Tabs
-const featureTab1 = document.querySelector('.feature-tab-1')
-const featureTab2 = document.querySelector('.feature-tab-2')
-const featureTab3 = document.querySelector('.feature-tab-3')
+const featureTabs = document.querySelectorAll('.feature-tab')
 
 buttonsFeature.forEach( button => {
     button.addEventListener('click', () => {
@@ -15,18 +13,16 @@ buttonsFeature.forEach( button => {
         })
         button.classList.add('button-style-feature-active')
 
+        featureTabs.forEach((featureTab) => {
+            featureTab.classList.add('inactive')
+        })
+
         if(button.innerText === "Simple Bookmarking" ) {
-            featureTab1.classList.remove('inactive')
-            featureTab2.classList.add('inactive')
-            featureTab3.classList.add('inactive')
+            featureTabs[0].classList.remove('inactive')
         } else if (button.innerText === "Speedy Searching") {
-            featureTab1.classList.add('inactive')
-            featureTab2.classList.remove('inactive')
-            featureTab3.classList.add('inactive')
+            featureTabs[1].classList.remove('inactive')
         } else {
-            featureTab1.classList.add('inactive')
-            featureTab2.classList.add('inactive')
-            featureTab3.classList.remove('inactive')
+            featureTabs[2].classList.remove('inactive')
         }
     })
 })
