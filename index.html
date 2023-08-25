@@ -12,8 +12,8 @@
         <img src="bookmark-landing-page-master/images/logo-bookmark.svg" alt="Logo Bookmark" class="logo-bookmark">
         <div class="links">
             <ul>
-                <li><a href="#" class="text nav-link">FEATURES</a></li>
-                <li><a href="#" class="text nav-link">PRICING</a></li>
+                <li><a href="#features" class="text nav-link">FEATURES</a></li>
+                <li><a href="#questions" class="text nav-link">PRICING</a></li>
                 <li><a href="#contact" class="text nav-link">CONTACT</a></li>
                 <li><button class="button red-button">LOGIN</button></li>
             </ul>
@@ -37,7 +37,7 @@
             </div>
         </section>
 
-        <section class="features-container">
+        <section id="features" class="features-container">
             <h2 class="title features title-feature">Features</h2>
             <p class="text features feature-text">Our aim is to make it quick and easy for you to acess your favourite websites. Your bookmarks sync between your devices so you can acess them on the go.</p>
 
@@ -48,9 +48,9 @@
             </div>
 
             <div class="feature-tab">
-                <div>
+                <div class="feature-media-conteiner">
                     <img src="bookmark-landing-page-master/images/illustration-features-tab-1.svg" alt="Página Bookmark">
-                    <!-- <div class="back-shape-inverted"></div> -->
+                    <div class="back-shape back-shape-inverted-tab-1"></div>
                 </div>
 
                 <div class="text-container-feature">
@@ -61,9 +61,9 @@
             </div>
 
             <div class="feature-tab inactive">
-                <div>
+                <div class="feature-media-conteiner">
                     <img src="bookmark-landing-page-master/images/illustration-features-tab-2.svg" alt="Página Bookmark">
-                    <!-- <div class="back-shape-inverted"></div> -->
+                    <div class="back-shape back-shape-inverted-tab-2"></div>
                 </div>
 
                 <div class="text-container-feature">
@@ -74,9 +74,9 @@
             </div>
 
             <div class="feature-tab inactive">
-                <div>
+                <div class="feature-media-conteiner">
                     <img src="bookmark-landing-page-master/images/illustration-features-tab-3.svg" alt="Página Bookmark">
-                    <!-- <div class="back-shape-inverted"></div> -->
+                    <div class="back-shape back-shape-inverted-tab-3"></div>
                 </div>
 
                 <div class="text-container-feature">
@@ -97,7 +97,7 @@
                 <div class="extensions-browser extension-google">
                     <img class="extensions-img-logo" src="bookmark-landing-page-master/images/logo-chrome.svg" alt="Logo Google">
                     <h3 class="title">Add to Chrome</h3>
-                    <p class="text extensions-text-midia">Minimum version</p>
+                    <p class="text extensions-text-midia">Minimum version 62</p>
                     <img class="extensions-img-dotted" src="bookmark-landing-page-master/images/bg-dots.svg" alt="Pontilhado">
                     <button class="button button-blue">Add & Instal Extensions</button>
                 </div>
@@ -113,14 +113,14 @@
                 <div class="extensions-browser extension-opera">
                     <img class="extensions-img-logo"  src="bookmark-landing-page-master/images/logo-opera.svg" alt="Logo Opera">
                     <h3 class="title">Add to Opera</h3>
-                    <p class="text extensions-text-midia">Minimum version</p>
+                    <p class="text extensions-text-midia">Minimum version 46</p>
                     <img class="extensions-img-dotted" src="bookmark-landing-page-master/images/bg-dots.svg" alt="Pontilhado">
                     <button class="button button-blue">Add & Instal Extensions</button>
                 </div>
             </div>
         </section>
 
-        <section class="questions-container">
+        <section id="questions" class="questions-container">
             <div class="questions-text-container">
                 <h2 class="title questions-title">Frequently Asked Questions</h2>
                 <p class="text questions-text">Here are some of out FAQs. If you have any other questions you'd like answered please fell free to email us.</p>
@@ -167,19 +167,25 @@
     <section id="contact" class="contact-container">
         <p class="contact-text">35,000+ ALREADY JOINED</p>
         <h2 class="contact-title">Stay up-to-date with what we're doing</h2>
-        <form>
-            <input type="text" class="contact-input" id="email" placeholder="Enter your email adress">
+        <form class="footer-form">
+            <div class="footer-input-error error-inactive">
+                <div class="footer-input-container">
+                    <input type="text" class="contact-input" id="email" placeholder="Enter your email adress">
+                    <img class="input-error-icon inactive" src="bookmark-landing-page-master/images/icon-error.svg" alt="Exclamação">
+                </div>
+                <p class="input-error-text inactive">Whoops, make sure it's an email</p>
+            </div>
             <button class="button red-button contact-button">Contact Us</button>
         </form>
     </section>
 
     <footer>
         <div class="footer-logo-links">
-            <img class="footer-logo" src="bookmark-landing-page-master/images/logo-bookmark.svg" alt="Logo Bookmark">
+            <img class="footer-logo" src="bookmark-landing-page-master/images/logo-footer.svg" alt="Logo Bookmark">
             <ul class="footer-links">
-                <li><a href="#" class="text nav-link">FEATURES</a></li>
-                <li><a href="#" class="text nav-link">PRICING</a></li>
-                <li><a href="#" class="text nav-link">CONTACT</a></li>
+                <li><a href="#features" class="text nav-link">FEATURES</a></li>
+                <li><a href="#questions" class="text nav-link">PRICING</a></li>
+                <li><a href="#contact" class="text nav-link">CONTACT</a></li>
             </ul>
         </div>
         <div class="footer-social-media">

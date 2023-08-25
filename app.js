@@ -1,9 +1,5 @@
 // FEATURES
-
-// Buttons
 const buttonsFeature = document.querySelectorAll('.button-style-feature')
-
-// Tabs
 const featureTabs = document.querySelectorAll('.feature-tab')
 
 buttonsFeature.forEach( button => {
@@ -28,19 +24,6 @@ buttonsFeature.forEach( button => {
 })
 
 // QUESTIONS
-
-// const arrowsButton = document.querySelectorAll('.questions-arrow')
-
-// arrowsButton.forEach((arrow) => {
-//     arrow.addEventListener('click', event => {
-//         const questionParagraph = event.target.parentElement.nextElementSibling
-
-//         questionParagraph.classList.toggle('question-text-active')
-
-//         event.target.classList.toggle('arrow-active')
-//     })
-// })
-
 const questions = document.querySelectorAll('.question-text-container')
 
 questions.forEach(question => {
@@ -62,4 +45,36 @@ questions.forEach(question => {
 
         questionParagraph.classList.toggle('question-text-active')
     })
+})
+
+// Contact
+
+const containerInputError = document.querySelector('.footer-input-error')
+const textInputError = document.querySelector('.input-error-text')
+const iconInputError = document.querySelector('.input-error-icon')
+const footerForm = document.querySelector('.footer-form')
+const contactInput = document.querySelector('.contact-input')
+
+const testUserEmail = () => {
+    const regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
+    const userEmail = contactInput.value
+    return regex.test(userEmail)
+}
+
+footerForm.addEventListener('submit', event => {
+    event.preventDefault()
+
+    const testedUserEmail = testUserEmail()
+
+    if(testedUserEmail) {
+        containerInputError.classList.add('error-inactive')
+        textInputError.classList.add('inactive')
+        iconInputError.classList.add('inactive')
+
+        return
+    }
+
+    containerInputError.classList.remove('error-inactive')
+    textInputError.classList.remove('inactive')
+    iconInputError.classList.remove('inactive')
 })
