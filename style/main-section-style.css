@@ -1,0 +1,58 @@
+@import url(base-style.css);
+
+main {
+    width: 1100px;
+    margin: auto;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+    height: auto;
+}
+
+.main-content {
+    padding-top: 70px;
+}
+
+.main-title {
+    font-size: 2.6em;
+}
+
+.main-text, .buttons-browser {
+    padding-top: 20px;
+}
+
+.button-firefox {
+    background-color: var(--text-light-color);
+    border: 2px solid var(--text-light-color);
+    color: var(--text-secundary-color);
+    box-shadow: 2px 2px 4px rgba(124, 150, 221, 0.158);
+}
+
+.button-firefox:hover {
+    border: 2px solid var(--text-secundary-color);
+}
+
+.vizual-midia {
+    height: 490px;
+}
+
+.image-web-page {
+    width: 300;
+    position: relative;
+    left: 81px;
+}
+
+.back-shape {
+    position: relative;
+    top: -325px;
+    left: 210px;
+    z-index: -1;
+    background-color: var(--primary-color);
+    width: 480px;
+    height: 340px;
+    margin: auto;
+    border-radius: 0 0 0 140px;
+  }

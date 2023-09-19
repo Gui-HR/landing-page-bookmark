@@ -49,10 +49,10 @@ questions.forEach(question => {
 
 // Contact
 
-const containerInputError = document.querySelector('.footer-input-error')
+const containerInputError = document.querySelector('.contact-input-error')
 const textInputError = document.querySelector('.input-error-text')
 const iconInputError = document.querySelector('.input-error-icon')
-const footerForm = document.querySelector('.footer-form')
+const footerForm = document.querySelector('.contact-form')
 const contactInput = document.querySelector('.contact-input')
 
 const testUserEmail = () => {

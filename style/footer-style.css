@@ -1,0 +1,37 @@
+@import url(base-style.css);
+
+footer {
+    display: flex;
+    background-color: #242946;
+    padding: 30px 100px;
+    justify-content: space-between;
+}
+
+.footer-logo-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-logo {
+    height: 25px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    font-size: 0.9em;
+}
+
+.footer-links > li {
+    list-style-type: none;
+}
+
+.footer-logos:hover {
+    filter: invert(43%) sepia(39%) saturate(2315%) hue-rotate(327deg) brightness(103%) contrast(97%);
+}
+
+.footer-facebook {
+    margin-right: 35px;
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #5065da;
+    --secondary-color: #fb5859;
+    --highlight-color: #212142;
+    --text-primary-color: #a0a1a5;
+    --text-secundary-color: #5C5C63;
+    --text-light-color: #F7F7F7;
+    --main-background-color: #ffffff;
+}
+    
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.title {
+    color: var(--highlight-color);
+}
+
+.text {
+    color: var(--text-primary-color);
+    line-height: 1.6rem;
+}
+
+.button {
+    padding: 10px 30px;
+    outline: none;
+    color: var(--main-background-color);
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--main-background-color);
+}
+
+.red-button {
+    background-color: var(--secondary-color);
+    border: solid 2px var(--secondary-color);
+}
+
+.red-button:hover {
+    color: var(--secondary-color);
+}
+
+.button-blue {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.button-blue:hover {
+    color: var(--primary-color);
+}

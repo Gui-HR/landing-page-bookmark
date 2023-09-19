@@ -1,0 +1,37 @@
+@import url(base-style.css);
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    align-items: center;
+    width: 1100px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.logo-bookmark {
+    height: 1.5em;
+}
+
+.links > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    font-size: 0.9em;
+}
+
+.links > ul > li {
+    list-style-type: none;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secundary-color);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}

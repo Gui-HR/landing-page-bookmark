@@ -1,0 +1,99 @@
+@import url(base-style.css);
+
+.features-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.features {
+    margin: auto;
+    text-align: center;
+}
+
+.title-feature {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.feature-text {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    width: 470px;
+}
+
+.button-features-container {
+    width: 632px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #c9cacc;
+}
+
+.button-style-feature {
+    padding: 30px 40px;
+    outline: none;
+    border: none;
+    background-color: var(--main-background-color);
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--text-primary-color);
+}
+
+.button-style-feature:hover {
+    color: var(--secondary-color);
+}
+
+.button-style-feature-active {
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 27px;
+    color: var(--highlight-color);
+}
+
+.feature-tab {
+    display: flex;
+    gap: 120px;
+    height: 350px;
+}
+
+.feature-media-conteiner {
+    text-align: end;
+    width: 560px;
+}
+
+.inactive {
+    display: none;
+}
+
+.text-container-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text-feature {
+    width: 390px;
+}
+
+.button-features {
+    width: 134px;
+}
+
+.back-shape-inverted-tab-1 {
+    top: -265px;
+    left: -125px;
+    border-radius: 0 0 140px 0;
+    width: 610px;
+}
+
+.back-shape-inverted-tab-2 {
+    top: -330px;
+    left: -125px;
+    border-radius: 0 140px 140px 0;
+    width: 590px;
+}
+
+.back-shape-inverted-tab-3 {
+    top: -295px;
+    left: -125px;
+    border-radius: 0 0 140px 0;
+    width: 625px;
+}
