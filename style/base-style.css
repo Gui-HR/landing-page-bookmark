@@ -5,7 +5,7 @@
     --secondary-color: #fb5859;
     --highlight-color: #212142;
     --text-primary-color: #a0a1a5;
-    --text-secundary-color: #5C5C63;
+    --text-secondary-color: #5C5C63;
     --text-light-color: #F7F7F7;
     --main-background-color: #ffffff;
 }
@@ -29,7 +29,6 @@
 .button {
     padding: 10px 30px;
     outline: none;
-    color: var(--main-background-color);
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
@@ -42,6 +41,7 @@
 .red-button {
     background-color: var(--secondary-color);
     border: solid 2px var(--secondary-color);
+    color: var(--main-background-color);
 }
 
 .red-button:hover {
@@ -51,6 +51,7 @@
 .button-blue {
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
+    color: var(--main-background-color);
 }
 
 .button-blue:hover {

@@ -1,0 +1,141 @@
+@import url(base-style.css);
+
+@media (max-width: 480px) {
+    main {
+        width: 100vw;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vizual-midia {
+        height: 400px;
+    }
+
+    .image-web-page {
+        width: 90%;
+        margin: 0 5%;
+        left: 0px;
+    }
+
+    .back-shape {
+        top: -235px;
+        left: 44px;
+        width: 81%;
+        height: 60%;
+      }
+
+      .main-content {
+        padding-top: 0px;
+    }
+
+      .main-title, .main-text {
+        text-align: center;
+    }
+
+    .main-text {
+        width: 70%;
+        margin: auto;
+    }
+
+    .buttons-browser {
+        text-align: center;
+    }
+
+    .features-container {
+        margin-top: 40%;
+        margin-bottom: 40%;
+    }
+
+    .feature-text {
+        width: 70%;
+    }
+
+    .button-features-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .button-style-feature {
+        border-top: 1px solid #c9cacc;
+        font-size: 1.1em;
+        padding: 20px 30px;
+    }
+
+    .button-style-feature:hover {
+        color: var(--highlight-color);
+    }
+
+    .feature-tab {
+        flex-direction: column;
+        gap: 20px;
+        height: initial;
+    }
+
+    .text-container-feature {
+        align-items: center;
+        gap: 15px;
+        margin-top: 110px;
+    }
+
+    .title-feature {
+        font-size: 1.6em;
+    }
+
+    .text-feature {
+        width: 70%;
+        text-align: center;
+    }
+
+    .button-features {
+        display: none;
+    }
+
+    .feature-media-conteiner {
+        text-align: center;
+        width: 100%;
+    }
+
+    .feature-img {
+        width: 80%;
+    }
+
+    .back-shape-inverted-tab-1 {
+        top: 42px;
+        left: 1px;
+        width: 83%;
+        height: 250px;
+
+    }
+
+    .back-shape-inverted-tab-2 {
+        top: 65px;
+        left: 1px;
+        width: 75%;
+        height: 280px;
+    }
+
+    .back-shape-inverted-tab-3 {
+        top: 71px;
+        left: 1px;
+        border-radius: 0 150px 140px 0;
+        width: 380px;
+        height: 300px;
+    }
+
+    .extensions-text {
+        width: 330px;
+    }
+
+    .extensions-midia-content {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        padding: 20px 100px;
+        gap: 70px;
+    }
+}

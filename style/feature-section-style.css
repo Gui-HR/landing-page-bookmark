@@ -56,6 +56,7 @@
 .feature-media-conteiner {
     text-align: end;
     width: 560px;
+    position: relative;
 }
 
 .inactive {
@@ -78,22 +79,37 @@
 }
 
 .back-shape-inverted-tab-1 {
-    top: -265px;
-    left: -125px;
+    top: 85px;
+    left: -124px;
     border-radius: 0 0 140px 0;
     width: 610px;
+    height: 345px;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-color);
+    margin: auto;
 }
 
 .back-shape-inverted-tab-2 {
-    top: -330px;
-    left: -125px;
-    border-radius: 0 140px 140px 0;
+    top: 83px;
+    left: -124px;
+    border-radius: 0 150px 140px 0;
     width: 590px;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-color);
+    margin: auto;
 }
 
 .back-shape-inverted-tab-3 {
-    top: -295px;
-    left: -125px;
-    border-radius: 0 0 140px 0;
+    top: 83px;
+    left: -124px;
+    border-radius: 0 150px 140px 0;
     width: 625px;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-color);
+    margin: auto;
 }

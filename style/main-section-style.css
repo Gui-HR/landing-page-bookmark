@@ -27,12 +27,12 @@ main {
 .button-firefox {
     background-color: var(--text-light-color);
     border: 2px solid var(--text-light-color);
-    color: var(--text-secundary-color);
+    color: var(--text-secondary-color);
     box-shadow: 2px 2px 4px rgba(124, 150, 221, 0.158);
 }
 
 .button-firefox:hover {
-    border: 2px solid var(--text-secundary-color);
+    border: 2px solid var(--text-secondary-color);
 }
 
 .vizual-midia {

@@ -29,7 +29,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: var(--text-secundary-color);
+    color: var(--text-secondary-color);
 }
 
 .nav-link:hover {
