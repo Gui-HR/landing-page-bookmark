@@ -35,6 +35,7 @@
     font-size: 1em;
     cursor: pointer;
     color: var(--text-primary-color);
+    transition: all ease .3s;
 }
 
 .button-style-feature:hover {

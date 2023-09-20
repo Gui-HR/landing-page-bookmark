@@ -28,7 +28,7 @@ main {
     background-color: var(--text-light-color);
     border: 2px solid var(--text-light-color);
     color: var(--text-secondary-color);
-    box-shadow: 2px 2px 4px rgba(124, 150, 221, 0.158);
+    box-shadow: 3px 3px 4px rgba(86, 105, 158, 0.185);
 }
 
 .button-firefox:hover {

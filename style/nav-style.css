@@ -30,6 +30,7 @@
 .nav-link {
     text-decoration: none;
     color: var(--text-secondary-color);
+    transition: all ease .3s;
 }
 
 .nav-link:hover {

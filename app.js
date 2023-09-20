@@ -24,14 +24,14 @@ buttonsFeature.forEach( button => {
 })
 
 // QUESTIONS
-const questions = document.querySelectorAll('.question-text-container')
+const questions = document.querySelectorAll('.question-text-container') // pega as question
 
 questions.forEach(question => {
-    question.addEventListener('click', event => {
-        const elementClicked = event.target
-        let arrow
+    question.addEventListener('click', event => { //adiciona um evento para cada question
+        const elementClicked = event.target //pega a referencia do elemento clicado
+        let arrow //cria uma let para ser atribuida depois
 
-        if(elementClicked.nodeName === 'DIV') {
+        if(elementClicked.nodeName === 'DIV') { //atribui a let apartir do elemento clicado
              arrow = elementClicked.children[1]
         } else if(elementClicked.nodeName === 'H3') {
             arrow = elementClicked.nextElementSibling
@@ -41,13 +41,14 @@ questions.forEach(question => {
 
         arrow.classList.toggle('arrow-active')
 
-        const questionParagraph = arrow.parentElement.nextElementSibling
+        // const questionParagraph = arrow.parentElement.nextElementSibling
+        const questionParagraph = arrow.parentElement.parentElement
 
         questionParagraph.classList.toggle('question-text-active')
     })
 })
 
-// Contact
+// CONTACT
 
 const containerInputError = document.querySelector('.contact-input-error')
 const textInputError = document.querySelector('.input-error-text')
