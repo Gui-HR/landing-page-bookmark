@@ -1,6 +1,10 @@
 @import url(base-style.css);
 
 @media (max-width: 480px) {
+    .nav-bar {
+        display: none;
+    }
+
     main {
         width: 100vw;
     }
@@ -22,7 +26,7 @@
 
     .back-shape {
         top: -235px;
-        left: 44px;
+        left: 9%;
         width: 81%;
         height: 60%;
       }
@@ -83,6 +87,7 @@
 
     .title-feature {
         font-size: 1.6em;
+        text-align: center;
     }
 
     .text-feature {
@@ -107,7 +112,7 @@
         top: 42px;
         left: 1px;
         width: 83%;
-        height: 250px;
+        height: 100%;
 
     }
 
@@ -115,19 +120,19 @@
         top: 65px;
         left: 1px;
         width: 75%;
-        height: 280px;
+        height: 84%;
     }
 
     .back-shape-inverted-tab-3 {
         top: 71px;
         left: 1px;
         border-radius: 0 150px 140px 0;
-        width: 380px;
-        height: 300px;
+        width: 81%;
+        height: 90%;
     }
 
     .extensions-text {
-        width: 330px;
+        width: 70%;
     }
 
     .extensions-midia-content {
@@ -137,5 +142,75 @@
         height: initial;
         padding: 20px 100px;
         gap: 70px;
+    }
+
+    .extension-google, .extension-opera {
+        align-self: center;
+    }
+
+    .questions-container {
+        width: 100%;
+        padding: 7%;
+        margin-bottom: 60px;
+    }
+
+    .questions-title {
+        margin: 0px auto 15px auto;
+        width: 65%;
+    }
+
+    .questions-text {
+        width: 80%;
+    }
+
+    .contact-title {
+        width: 70%;
+        font-weight: normal;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+
+    .contact-input-error, .contact-button {
+        width: 85%;
+        margin: auto;
+    }
+
+    .contact-input {
+        width: 80%;
+    }
+
+    .input-error-icon {
+        margin: auto
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100vw;
+        padding: 40px 0px 50px 0px;
+    }
+
+    .footer-logo {
+        width: 170px;
+        height: initial;
+        margin: auto;
+    }
+
+    .footer-logo-links {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .footer-social-media {
+        text-align: center;
     }
 }
