@@ -8,10 +8,48 @@
     width: 1100px;
     margin: auto;
     margin-top: 40px;
+    transition: .3s;
+}
+
+.nav-active {
+    background-color: #212142ef;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
 }
 
 .logo-bookmark {
     height: 1.5em;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.line-menu-hamburguer {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: var(--highlight-color);
+    margin-bottom: 5px;
+    transition: transform ease .2s, background-color ease .5s;
+}
+
+.line1-menu-hamburguer-active {
+    transform-origin: top left;
+    transform: rotate(45deg);
+    background-color: var(--text-light-color);
+}
+
+.line2-menu-hamburguer-active {
+    opacity: 0;
+    background-color: var(--text-light-color);
+}
+
+.line3-menu-hamburguer-active {
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
+    background-color: var(--text-light-color);
 }
 
 .links > ul {
