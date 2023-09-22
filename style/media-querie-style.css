@@ -9,6 +9,13 @@
         height: 170px;
     }
 
+    .nav-active {
+        background-color: #212142ef;
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+    }
+
     .menu {
         width: 90%;
         display: flex;

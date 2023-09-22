@@ -2,7 +2,9 @@
 const nav = document.querySelector('nav')
 const main = document.querySelector('main')
 const logoBookmark = document.querySelector('.logo-bookmark')
-const links = document.querySelector('.links')
+const divLinksContainer = document.querySelector('.links')
+const ul = document.querySelector('ul')
+const navLinks = Array.from(document.querySelectorAll('[data-link]'))
 const menuHamburguer = document.querySelector('.menu-hamburguer')
 const menuHamburguerLines = Array.from(menuHamburguer.children)
 const classesMenuHamburguerLines = ['line1-menu-hamburguer-active',
@@ -12,31 +14,80 @@ const addMenuHamburguerClasses = (line, index) => {
     line.classList.toggle(classesMenuHamburguerLines[index])
 }
 
-menuHamburguer.addEventListener('click', () => {
+const menuAnimation = () => {
     const logo = 'bookmark-landing-page-master/images/logo-bookmark.svg'
     const logoActive = 'bookmark-landing-page-master/images/logo-bookmark-active.svg'
-    const miliseconds = Array.from(nav.classList).includes('nav-active') ? 800 : 0
 
-    window.scroll({
+    menuHamburguerLines.forEach(addMenuHamburguerClasses)
+
+    nav.classList.toggle('nav-active')
+    divLinksContainer.classList.toggle('links-active')
+    main.classList.toggle('menu-active-effect')
+
+    if(window.innerWidth < 480) {
+        logoBookmark.getAttribute('src') === logo ? logoBookmark
+            .setAttribute('src', logoActive) : logoBookmark
+            .setAttribute('src', logo)
+    }
+}
+
+const opeAndCloseMenu = event => {
+    const eixoY = event.pageY
+    const  timeToScroll = eixoY < 1000 ? eixoY / 1.7 : eixoY < 2000 ? eixoY / 2.5 : eixoY < 3000 ? eixoY / 3.7 : eixoY < 4000 ? eixoY / 4.7 : eixoY / 6
+    const miliseconds = Array.from(nav.classList).includes('nav-active') ? Math.trunc(timeToScroll) : 0
+
+    scrollTo({
         top: 0,
         left: 0,
         behavior: 'smooth'
     })
 
-    setTimeout(() => {
-        menuHamburguerLines.forEach(addMenuHamburguerClasses)
+    setTimeout(menuAnimation, miliseconds)
+}
 
-        nav.classList.toggle('nav-active')
-    
-        logoBookmark.getAttribute('src') === logo ? logoBookmark
-            .setAttribute('src', logoActive) : logoBookmark
-            .setAttribute('src', logo)
-    
-        links.classList.toggle('links-active')
-    
-        main.classList.toggle('menu-active-effect')
-    }, miliseconds)
-})
+const removeHrefOfLinks = () => {
+    navLinks.filter( link => link.nodeName === 'A').forEach(item => {
+        item.setAttribute('href','#')
+    })
+}
+
+const scroll = (dataLink, x, coordY) => {
+    if(dataLink === x) {
+        setTimeout(() => {
+            scrollTo({
+                top: coordY,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }, 400)
+    }
+}
+
+const closeMenuAndScrollPage = event => {
+    const elementClicked = event.target
+    const dataLink = elementClicked.dataset.link
+
+    removeHrefOfLinks()
+
+    if(navLinks.includes(elementClicked)) {
+        menuAnimation()
+        
+        if(window.innerWidth < 480) {
+            scroll(dataLink, 'features', 1100)
+            scroll(dataLink, 'pricing', 3650)
+            scroll(dataLink, 'contact', 4500)
+
+            return
+        }
+
+        scroll(dataLink, 'features', 700)
+        scroll(dataLink, 'pricing', 2250)
+        scroll(dataLink, 'contact', 4500)
+    }
+}
+
+menuHamburguer.addEventListener('click', opeAndCloseMenu)
+ul.addEventListener('click', closeMenuAndScrollPage)
 
 
 // FEATURES

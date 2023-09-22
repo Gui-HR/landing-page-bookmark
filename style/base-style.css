@@ -57,3 +57,13 @@
 .button-blue:hover {
     color: var(--primary-color);
 }
+
+.link {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    transition: all ease .3s;
+}
+
+.link:hover {
+    color: var(--secondary-color);
+}
